@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".QuestionActivity"
+    android:background="#8A576D">
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:id="@+id/btnNext"
+        android:layout_alignTop="@+id/btnBack"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ffffffff"
+        android:background="#ffffa500"
+        android:textSize="9pt" />
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/btnBack"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffffff"
+        android:background="#ffffa500"
+        android:textSize="9pt" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/btnNext"
+        android:id="@+id/rdgrpAns">
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Tokyo"
+            android:id="@+id/rdbAns1"
+            android:layout_weight=".2"
+            android:textColor="#ffffffff"
+            android:checked="true"
+            android:textSize="9pt" />
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Paris"
+            android:id="@+id/rdbAns2"
+            android:layout_weight=".2"
+            android:checked="false"
+            android:textColor="#ffffffff"
+            android:textSize="9pt" />
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="New York"
+            android:id="@+id/rdbAns3"
+            android:layout_weight=".2"
+            android:checked="false"
+            android:textColor="#ffffffff"
+            android:textSize="9pt" />
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Chicago"
+            android:id="@+id/rdbAns4"
+            android:layout_weight=".2"
+            android:checked="false"
+            android:textColor="#ffffffff"
+            android:textSize="9pt" />
+
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="London"
+            android:id="@+id/rdbAns5"
+            android:layout_weight=".2"
+            android:checked="false"
+            android:textColor="#ffffffff"
+            android:textSize="9pt" />
+    </RadioGroup>
+
+    <EditText
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/edtxtQuestion"
+        android:text="What city would you like to visit?"
+        android:textColor="#ffffffff"
+        android:textSize="9pt"
+        android:layout_above="@+id/rdgrpAns"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/rdgrpAns"
+        android:layout_alignEnd="@+id/rdgrpAns"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>
