@@ -5,4 +5,7 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_top">TopActivity</string>
     <string name="title_activity_stats">StatsActivity</string>
+    <string name="title_activity_graph">GraphActivity</string>
+    <string name="base_text">There will be stats on this page.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</string>
+    <string name="next">NEXT</string>
 </resources>

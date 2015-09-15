@@ -1,27 +1,22 @@
 package com.intl.aaa.survey;
 
-import android.content.Intent;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
-
-public class StatsActivity extends ActionBarActivity {
+public class GraphActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_stats);
-
+        setContentView(R.layout.activity_graph);
     }
 
 /*    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_stats, menu);
+        getMenuInflater().inflate(R.menu.menu_graph, menu);
         return true;
     }*/
 
@@ -39,13 +34,4 @@ public class StatsActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }*/
-
-    public void actToGraph(View view){
-        switch (view.getId()){
-            case R.id.btnToGraph:
-                Intent intent = new Intent(this, GraphActivity.class);
-                startActivity(intent);
-                break;
-        }
-    }
 }
