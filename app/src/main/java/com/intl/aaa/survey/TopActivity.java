@@ -65,4 +65,15 @@ public class TopActivity extends ActionBarActivity {
                 break;
         }
     }
+
+    public void actToImport(View view){
+        switch (view.getId()){
+            case R.id.btnImportFile:
+/*                Intent intent = new Intent(this, QuestionActivity.class);
+                startActivity(intent);*/
+                Toast iftoast = Toast.makeText(this, "Clicked IMPORT FILE", Toast.LENGTH_LONG);
+                iftoast.show();
+                break;
+        }
+    }
 }

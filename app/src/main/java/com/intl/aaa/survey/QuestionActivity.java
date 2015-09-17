@@ -1,9 +1,11 @@
 package com.intl.aaa.survey;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class QuestionActivity extends ActionBarActivity {
@@ -34,5 +36,14 @@ public class QuestionActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void actToTop(View view){
+        switch (view.getId()){
+            case R.id.btnBack:
+                Intent intent = new Intent(this, TopActivity.class);
+                startActivity(intent);
+                break;
+        }
     }
 }
